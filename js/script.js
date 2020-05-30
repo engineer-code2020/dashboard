@@ -4,7 +4,7 @@ $(function(){
     })
   $("#to_up").click(function(){$("html,body").animate({scrollTop:0},800)})
 // -------------------------------------------
-$(".se-pre-con").load(function() {$(this).fadeOut("slow")});
+$(".se-pre-con").click(function() {$(this).fadeOut("slow")});
 
 // *******************
 $("#nav .trans").on("click",function(){
