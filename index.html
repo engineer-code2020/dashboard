@@ -9,24 +9,27 @@
     <title>My Dashboard</title>
 </head>
 <body>
+    <div id="home"></div>
+    <div title="click here" class="se-pre-con"></div>
     <section id="to_up">
         <a class=" top-item" href="#"><span>TOP</span></a>
     </section>
         <!-- ----------------- -->
-    <div class="navbar bg-danger text-light">
-        <div class="container row">
-            <img src="img/logo.jpg" alt="" width="60px">
-            <div class="col-5">
-                <span class="mx-3">First Row</span>
-                <span class="mx-3">Secand Row</span>
-                <span class="mx-3">Third Row</span>
-                <span class="mx-3">End Row</span>
+    <div id="nav" class="navbar shadow fixed-top navbar-expand-lg navbar-light row justify-content-center">
+        <div class="container">
+            <div class="row col-12 justify-content-between">
+                <div class="g5 text-center py-2"><a class="trans text-light" href="#home">Home</a></div>
+                <div class="g5 text-center py-2"><a class="trans text-light" href="#dash001">First Row</a></div>
+                <div class="g5 text-center py-2"><a class="trans text-light" href="#dash003">Second Row</a></div>
+                <div class="g5 text-center py-2"><a class="trans text-light" href="#dash005">Third Row</a></div>
+                <div class="g5 text-center py-2"><a class="trans text-light" href="#dash007">End Row</a></div>
             </div>
         </div>
     </div>
     <div class="title">
         <div class="container">
-            <h1 class="text-center text-danger my-5">My Dashboard</h1>
+            <h1 id="tit" class="text-center text-danger">My Dashboard</h1>
+            <div class="text-center"><img id="logo" src="img/logo.jpg" alt="" width="400px"></div>
             <h2 class="text-center  my-5 mx-auto">متابعة المواقع الخاص بي</h2>
         </div>
     </div>
@@ -39,12 +42,13 @@
 
 
 
-<div class="footer bg-danger">
+<div class="footer">
     <h3>مع تحيات مدونة <a href="http://engineer-code2020.blogspot.com/">المهندس كود</a></h3>
 </div>
 <!-- ---------------------------- -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script src="js/counter.js"></script>
 <script src="js/script.js"></script>
 </body>
