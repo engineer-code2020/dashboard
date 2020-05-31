@@ -25,25 +25,25 @@ xhttp.open("GET", "topics.json", true);
 xhttp.onload=function(){
     var route ="img/"
     var data=JSON.parse(xhttp.response)
-    // console.log(data[2].urlCard)
     var txt=''
     for(i=0;i<data.length;i++)
     {
         txt+=`
-            <div id="cardF" class="col-4 p-3 m-3">
+            <div id="cardF" class="col-10 col-lg-4 p-3 m-3">
             <h4 id="${"dash"+data[i].id}" class="text-center text-danger">${data[i].titleCard}</h4>
             <div  class="text-center"><img class="cardimg" src="${route+data[i].img}" alt="" width="150"></div>
-            <h4 class="text-center my-2"><a class="text-info" href="${data[i].urlCard}">View Website</a></h4>
+            <h4 class="text-center my-2"><a class="text-info" href="${data[i].urlCard}" target="_bank">View Website</a></h4>
             <hr>`     
         var xhttp2 = new XMLHttpRequest();
         xhttp2.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
+
+
             }
         };
         xhttp2.open("POST", "https://breaktxt.000webhostapp.com/returnData/", false );
         xhttp2.onload=function(){
                 var v_001=JSON.parse(xhttp2.responseText)
-                // console.log(v_001)
                  txt+=`<div class="row justify-content-around"">
                          <h5 class="text-dark col-6">In Day</h5>
                          <h4 class="text-info col"><i class="fas fa-hand-point-right"></i></h4>
