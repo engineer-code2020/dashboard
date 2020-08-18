@@ -68,7 +68,7 @@ color: #fff;
 width: 60px;
 height: 60px;
 position: fixed;
-bottom: 93px;
+bottom: 145px;
 right: 20px;
 font-size: 2.5rem;
 text-align: center;
@@ -87,4 +87,29 @@ text-decoration: none;
 	height: 100%;
 	z-index: 9999;
 	background: url(../img/Preloader_3.gif) center no-repeat rgba(0, 0, 0, .9);
+}
+.social a
+{
+    font-size: 1.8rem;
+    color: #aaa;
+    margin: 0 25px;
+    transition: .2s;
+    
+}
+
+.social a:hover:first-child
+{
+    Color:#4267b2;;
+}
+.social a:hover:nth-child(2)
+{
+    Color:#ff5722;
+}
+.social a:hover:nth-child(3)
+{
+    Color:#dd0404;
+}
+.social a:hover:nth-child(4)
+{
+    Color:#1da1f2;;
 }
